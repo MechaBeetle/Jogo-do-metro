@@ -1,0 +1,6 @@
+res://Assets/Scenes/Areas/area_1.tscn
+res://Assets/Scripts/area_change.gd
+res://Assets/Scenes/Areas/area_2.tscn
+res://Assets/Scripts/player_controler.gd
+res://Assets/Scenes/AreaFunctionality/area_change.tscn
+res://Assets/Scripts/game_manager.gd

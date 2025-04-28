@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl0bjvprqdp00"]
+
+[ext_resource type="Script" uid="uid://dp3ya6y2fcl05" path="res://Assets/Scripts/area_change.gd" id="1_ha6ok"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2jowm"]
+
+[node name="AreaChange" type="Area2D"]
+collision_layer = 65536
+script = ExtResource("1_ha6ok")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2jowm")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

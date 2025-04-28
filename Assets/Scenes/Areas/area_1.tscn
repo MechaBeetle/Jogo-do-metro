@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://e4lfxurek42b"]
+[gd_scene load_steps=8 format=4 uid="uid://e4lfxurek42b"]
 
 [ext_resource type="Texture2D" uid="uid://o23uyo8xywdc" path="res://Assets/Sprites/tiles_1.png" id="1_uidp5"]
 [ext_resource type="PackedScene" uid="uid://g8g3aevxttwh" path="res://Assets/Scenes/player.tscn" id="2_3uyhe"]
 [ext_resource type="Texture2D" uid="uid://bsbaue4nv7wsx" path="res://Assets/Sprites/istockphoto-1318855288-1024x1024.jpg" id="3_8wi1m"]
 [ext_resource type="PackedScene" uid="uid://dg4yri6tqxayp" path="res://Assets/Scenes/OneWayPlatform.tscn" id="4_ql8qi"]
+[ext_resource type="PackedScene" uid="uid://bl0bjvprqdp00" path="res://Assets/Scenes/AreaFunctionality/area_change.tscn" id="5_7fk0h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3uyhe"]
 texture = ExtResource("1_uidp5")
@@ -158,3 +159,6 @@ position = Vector2(91, -21)
 
 [node name="StaticBody2D12" parent="Node" instance=ExtResource("4_ql8qi")]
 position = Vector2(112, -21)
+
+[node name="AreaChange" parent="." instance=ExtResource("5_7fk0h")]
+position = Vector2(152, -30)
